@@ -1,20 +1,20 @@
 {
-  "name": "@uniswap/v3-periphery",
-  "description": "🎚 Peripheral smart contracts for interacting with Uniswap V3",
+  "name": "@planq-fi/periphery",
+  "description": "Peripheral smart contracts for interacting with PlanqFi",
   "license": "GPL-2.0-or-later",
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.4.3",
-  "homepage": "https://uniswap.org",
+  "version": "1.0.0",
+  "homepage": "https://planq.finance",
   "keywords": [
-    "uniswap",
+    "planqfi",
     "periphery",
-    "v3"
+    "contracts"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v3-periphery"
+    "url": "https://github.com/planq-fi/periphery"
   },
   "files": [
     "contracts/base",
@@ -31,8 +31,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "3.4.2-solc-0.7",
     "@uniswap/lib": "^4.0.1-alpha",
-    "@uniswap/v2-core": "1.0.1",
-    "@uniswap/v3-core": "1.0.0",
+    "@planq-fi/contracts": "1.0.1",
     "base64-sol": "1.0.1"
   },
   "devDependencies": {

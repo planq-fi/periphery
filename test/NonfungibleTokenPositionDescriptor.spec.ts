@@ -68,20 +68,8 @@ describe('NonfungibleTokenPositionDescriptor', () => {
       expect(await nftPositionDescriptor.tokenRatioPriority(USDC, 1)).to.eq(300)
     })
 
-    it('returns 100 for DAI', async () => {
-      expect(await nftPositionDescriptor.tokenRatioPriority(DAI, 1)).to.eq(100)
-    })
-
     it('returns  150 for USDT', async () => {
       expect(await nftPositionDescriptor.tokenRatioPriority(USDT, 1)).to.eq(200)
-    })
-
-    it('returns -200 for TBTC', async () => {
-      expect(await nftPositionDescriptor.tokenRatioPriority(TBTC, 1)).to.eq(-200)
-    })
-
-    it('returns -250 for WBTC', async () => {
-      expect(await nftPositionDescriptor.tokenRatioPriority(WBTC, 1)).to.eq(-300)
     })
 
     it('returns 0 for any non-ratioPriority token', async () => {
